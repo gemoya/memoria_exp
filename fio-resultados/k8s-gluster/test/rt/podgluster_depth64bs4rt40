@@ -1,0 +1,18 @@
+kubebench: (g=0): rw=randrw, bs=4K-4K/4K-4K/4K-4K, ioengine=libaio, iodepth=64
+fio-2.2.10
+Starting 1 process
+kubebench: Laying out IO file(s) (1 file(s) / 500MB)
+
+kubebench: (groupid=0, jobs=1): err= 0: pid=902: Sat Jan 27 23:58:43 2018
+  read : io=7588.0KB, bw=8403.2KB/s, iops=2054, runt=   903msec
+  write: io=3540.0KB, bw=3920.3KB/s, iops=956, runt=   903msec
+  cpu          : usr=60.31%, sys=149.89%, ctx=128077, majf=0, minf=8
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.3%, 16=0.6%, 32=1.2%, >=64=4705.3%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued    : total=r=1855/w=864/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: io=7588KB, aggrb=8403KB/s, minb=8403KB/s, maxb=8403KB/s, mint=903msec, maxt=903msec
+  WRITE: io=3540KB, aggrb=3920KB/s, minb=3920KB/s, maxb=3920KB/s, mint=903msec, maxt=903msec
